@@ -26,7 +26,7 @@ app.use(compression())
 // Support post requests with body data (doesn't support multipart, use multer)
 app.use(bodyParser.json())
 app.use(bodyParser.urlencoded({ extended: false }))
-app.use('/.netlify/functions/server', router)
+app.use('/.netlify/functions/app', router)
 
 // Setup logger
 app.use(morgan('combined'))
