@@ -20,6 +20,12 @@ const api = require('../routes/api')
 
 const app = express()
 
+router.get('/', (req, res) => {
+  res.writeHead(200, { 'Content-Type': 'text/html' })
+  res.write('<h1>Hello from Express.js!</h1>')
+  res.end()
+})
+
 // Support Gzip
 app.use(compression())
 
