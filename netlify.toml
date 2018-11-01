@@ -1,4 +1,3 @@
 [build]
-  Command = "yarn build"
-  Functions = "app"
-  Publish = "build"
+  command = "npm install && npm run build"
+  Functions = "functions"
