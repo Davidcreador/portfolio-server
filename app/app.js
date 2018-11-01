@@ -15,8 +15,8 @@ require('babel-register')({
 
 // routes
 const router = express.Router()
-const index = require('./routes/index')
-const api = require('./routes/api')
+const index = require('../routes/index')
+const api = require('../routes/api')
 
 const app = express()
 
