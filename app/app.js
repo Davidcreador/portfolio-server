@@ -37,7 +37,7 @@ app.use('/.netlify/functions/app', router)
 // Setup logger
 app.use(morgan('combined'))
 
-app.use('/', index)
+// app.use('/', index)
 
 app.use('/api', api)
 
